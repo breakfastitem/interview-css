@@ -45,14 +45,20 @@
 
 #gif-two p {
     animation-name: gif_two;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 #gif-three {
     background-color: blue;
-    color: white;
+    color: black;
     grid-column: 3;
+}
+
+#gif-three p {
+    animation-name: gif_three;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 /*Key Frames*/
@@ -78,5 +84,26 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes gif_three {
+    0% {
+        color: black;
+    }
+    25% {
+        color: white;
+        transform: translateY(40%);
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: white;
+        transform: translateY(-40%);
+    }
+    100% {
+        color: black;
+        transform: translateY(0%);
     }
 }
