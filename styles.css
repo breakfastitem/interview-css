@@ -6,33 +6,25 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 0px;
-
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 30px;
-
 }
 
 .column {
     border-width: 1px;
     border-color: black;
     border-style: solid;
-
     height: 300px;
 }
 
 .column p {
-
     margin-top: 0px;
     margin-bottom: 0px;
-
     /*Font*/
     font-weight: bolder;
     font-size: 30px;
-
-
     width: 100%;
-
     line-height: 300px;
     text-align: center;
 }
@@ -42,14 +34,19 @@
 #gif-one {
     background-color: yellow;
     grid-column: 1;
-
     animation-name: gif_one;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 #gif-two {
     grid-column: 2;
+}
+
+#gif-two p {
+    animation-name: gif_two;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 #gif-three {
@@ -58,7 +55,8 @@
     grid-column: 3;
 }
 
-/*Animations*/
+/*Key Frames*/
+
 @keyframes gif_one {
     0% {
         background-color: yellow;
@@ -68,7 +66,17 @@
         background-color: blue;
         color: white;
     }
-    100% {background-color: yellow;
+    100% {
+        background-color: yellow;
         color: black;
+    }
+}
+
+@keyframes gif_two {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
