@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 0px;
+
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 30px;
@@ -15,15 +16,18 @@
     border-width: 1px;
     border-color: black;
     border-style: solid;
+
     height: 300px;
 }
 
 .column p {
     margin-top: 0px;
     margin-bottom: 0px;
+
     /*Font*/
     font-weight: bolder;
     font-size: 30px;
+
     width: 100%;
     line-height: 300px;
     text-align: center;
@@ -34,6 +38,7 @@
 #gif-one {
     background-color: yellow;
     grid-column: 1;
+
     animation-name: gif_one;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -52,6 +57,7 @@
 #gif-three {
     background-color: blue;
     color: black;
+    
     grid-column: 3;
 }
 
